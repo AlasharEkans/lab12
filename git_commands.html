@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="git-commands_style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="h-left">
+                <h1>Мій особистий блог</h1>
+                <p class="pib">Назар Борута</p>
+            </div>
+            <div class="d-right">
+                <button>Вхід</button>
+                <button>Реєстрація</button>
+            </div>
+        </header>
+        <main>
+            <div>
+                <div>
+                    <p class="caption cap1">Create a repository</p>
+                    <p class="description">from scretch -- Create new local repository</p>
+                    <p class="command">$ git init [project name]</p>
+                    <p class="description">Download from an existing repository</p>
+                    <p class="command">$ git clone my_url</p>
+                    <br>
+                </div>
+                <div>
+                    <p class="caption cap2">Observe your Repository</p>
+                    <p class="description">List new or modified files not yet commited</p>
+                    <p class="command">$ git status</p>
+                    <p class="description">show the changes to files not yet staged</p>
+                    <p class="command">$ git diff</p>
+                    <p class="description">Show the changes to staged files</p>
+                    <p class="command">$ git diff --cached</p>
+                    <p class="description">Show all staged and unstaged file changes</p>
+                    <p class="command">$ git diff HEAD</p>
+                    <p class="description">show the changes between two commits</p>
+                    <p class="command">$ git diff commit1 commit2</p>
+                    <p class="description">List the change dates and authors for a file</p>
+                    <p class="command">$ git blame [file]</p>
+                    <p class="description">Show the file changes for a commit id  and/or file</p>
+                    <p class="command">$ git show [commit] : [file]</p>
+                    <p class="description">Show full change history</p>
+                    <p class="command">$ git log</p>
+                    <p class="description">Show  change history for  file/directory including diffs</p>
+                    <p class="command">$ git log -p [file/directory]</p>
+                </div>
+                <div>
+                    <p class="caption cap3">Working with Branches</p>
+                        <p class="description">List all local branches</p>
+                        <p class="command">$ git branch</p>
+                        <p class="description">List all branches local and remote</p>
+                        <p class="command">$ git branch -av</p>
+                        <p class="description">Switch to a branch, my_branch, and update working directory</p>
+                        <p class="command">$ git checkout my_branch</p>
+                        <p class="description">Create a new branch called new_branch</p>
+                        <p class="command">$ git branch new_branch</p>
+                        <p class="description">Delete the branch called my_branch</p>
+                        <p class="command">$ git branch -d my_branch</p>
+                        <p class="description">Merge branch_a into branch_b</p>
+                        <p class="command">$ git checkout branch_b<br>$ git merge branch_a</p>
+                        <p class="description">tag the current commit</p>
+                        <p class="command">$ git tag my_tag</p>
+                </div>
+                <div>
+                    <p class="caption cap4">Make a change</p>
+                        <p class="description">stages the file, ready for commit</p>
+                        <p class="command">$ git add [file]</p>
+                        <p class="description">Stage all changed files ready to commit</p>
+                        <p class="command">$ git add .</p>
+                        <p class="description">Commit all staged files to vesioned history</p>
+                        <p class="command">$ git commit -m "commit message"</p>
+                        <p class="description">Commit all your tracked files to versioned history</p>
+                        <p class="command">$ git commit -am "commit message"</p>
+                        <p class="description">Unstages file, keeping the file changes</p>
+                        <p class="command">$ git reset [file]</p>
+                        <p class="description">Revert everything to the last commit</p>
+                        <p class="command">$ git reset --hard</p>
+                </div>
+                <div>
+                    <div>
+                        <p class="caption cap5">Synchronize</p>
+                        <p class="description">Get the  latest changes from origin (no merge)</p>
+                        <p class="command">$ git fetch</p>
+                        <p class="description">Fetch the latest changes from origin and merge</p>
+                        <p class="command">$ git pull</p>
+                        <p class="description">Fetch the latest changes from origin and rebase</p>
+                        <p class="command">$ git pull --rebase</p>
+                        <p class="description">Push local changes to the origin</p>
+                        <p class="command">$ git push</p>
+                    </div>
+                    <div>
+                        <p class="caption cap6">Finally!</p>
+                        <p class="description">When in doubt, use git help</p>
+                        <p class="command">$ git command --help</p>
+                    </div>
+                </div>
+            </div>    
+        </main>
+        <footer>
+            <p>Всі права захищені</p>
+            <p>Розробник: студент групи 303-ТН Борута Н.В..</p>
+        </footer>
+    </div>
+</body>
+</html>
